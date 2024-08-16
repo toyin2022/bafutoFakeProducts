@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const Product = require("./models/Product");
 const generateFakeProducts = require("./faker");
 const app = express();
+const cors = require("cors");
 const port = 2024;
 
 // Connect to MongoDB
@@ -12,6 +13,8 @@ mongoose
   )
   .then(() => console.log("Connected to MongoDB"))
   .catch((err) => console.log("Failed to connect to MongoDB:", err));
+
+app.use(cors({ origin: "*" }));
 
 // Get all products
 app.get("/products", async (req, res) => {
