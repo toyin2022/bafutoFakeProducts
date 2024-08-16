@@ -1,0 +1,20 @@
+{
+  "name": "bafutofakeproducts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "express": "^4.19.2",
+    "faker": "^6.6.6",
+    "mongoose": "^8.5.3",
+    "nodemon": "^3.1.4"
+  }
+}
